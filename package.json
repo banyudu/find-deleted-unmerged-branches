@@ -1,6 +1,6 @@
 {
   "name": "find-deleted-unmerged-branches",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Find deleted un-merged branches in a local git repository",
   "main": "lib/index.js",
   "bin": "lib/cli.js",
