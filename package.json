@@ -1,0 +1,51 @@
+{
+  "name": "find-deleted-unmerged-branches",
+  "version": "1.0.0",
+  "description": "Find deleted un-merged branches in a local git repository",
+  "main": "lib/index.js",
+  "bin": "lib/cli.js",
+  "scripts": {
+    "dev": "ts-node ./src/cli.ts",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "npm run build",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/banyudu/find-deleted-unmerged-branches.git"
+  },
+  "keywords": [
+    "git",
+    "branch",
+    "unmerged",
+    "deleted"
+  ],
+  "files": [
+    "lib"
+  ],
+  "author": "banyudu <banyudu@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/banyudu/find-deleted-unmerged-branches/issues"
+  },
+  "homepage": "https://github.com/banyudu/find-deleted-unmerged-branches#readme",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "simple-git": "^2.46.0",
+    "yargs": "^17.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^16.10.3",
+    "@types/yargs": "^17.0.3",
+    "husky": "^7.0.2",
+    "lint-staged": "^11.2.3",
+    "nodemon": "^2.0.13",
+    "ts-node": "^10.3.0",
+    "ts-standard": "^10.0.0",
+    "typescript": "^4.4.3"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "ts-standard --fix"
+  }
+}
