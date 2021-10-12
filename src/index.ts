@@ -90,7 +90,6 @@ const findDeletedUnmergedBranches = async (dir: string): Promise<Array<{ name: s
   }
 
   const unresolvedCommitsChildren = await getChildrenCommits(Array.from(unresolvedCommits), false)
-  console.log('unresolvedCommitsChildren: ', unresolvedCommitsChildren)
   unresolvedCommitsChildren.forEach(sha => {
     unresolvedCommits.delete(sha)
   })
